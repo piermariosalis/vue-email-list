@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Email List</title>
+
+    <!-- AXIOS CDN -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>    
+    <!-- JQUERY CDN -->
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+   
+    <!--  VUE CDN  -->
+   <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+   
+</head>
+<body>
+    
+
+    <div id="app">
+        <main style="text-align: center; ">
+            <h1>Black List Email</h1>
+            <ul style="list-style: none">
+                <li v-for="NewEmail in emailGenerated" >{{NewEmail}}</li>
+            </ul>
+        </main>
+    </div>
+
+
+
+
+
+
+   <script src="./assets/js/main.js"></script>
+</body>
+</html>
